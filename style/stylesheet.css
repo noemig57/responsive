@@ -1,0 +1,61 @@
+*{
+    padding: 20px;
+    margin-bottom: 10px; 
+}
+
+
+.top {
+background-color: gray;
+border: 1px solid darkgray;
+
+
+}
+
+#middle {
+    background-color: lightgray;
+    border: 1px solid darkgray;
+
+}
+.phone {
+    background-color: lightpink;
+    border: 1px solid darkgray;
+
+}
+.tablet {
+    background-color: lightblue;
+    border: 1px solid darkgray;
+
+}
+
+.desktop {
+    background-color: lightgreen;
+    border: 1px solid darkgray;
+
+}
+
+@media screen and (max-width:600px){
+    .tablet {
+        display:none; 
+    }
+    .desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width: 1023px) {
+    .phone {
+        display:none; 
+    }
+    .desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .phone {
+        display:none; 
+    }
+    .tablet {
+        display: none;
+    }
+}
